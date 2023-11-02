@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal webpage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Domnița Andrei Claudiu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Despre</a></li>
+                <li><a href="#hobbies">Pasiuni</a></li>
+                <li><a href="#projects">Proiecte</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Domnița Andrei Claudiu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"  onclick="toggleMenu()">Despre</a></li>
+                <li><a href="#hobbies" onclick="toggleMenu()">Pasiuni</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Proiecte</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>   
+    </nav>
+    <section id="profile">
+         <div class="section_picture">
+            <img src="./assets/accountpicture2.jpg">
+         </div>
+         <div class="section_text">
+           
+            <h1 class="title">Domnița Andrei Claudiu </h1>
+            <p class="section_text_p2">Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color1" onclick="window.open('./assets/CV.pdf')">Vezi CV-ul meu</button>
+                <button class="btn btn-color2" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/facebook.png" alt="My facebook profile"
+                class="icon" onclick="location.href='https://www.facebook.com/AndreiAndrei7v?locale=ro_RO'"/>
+                <img src="./assets/github.png" alt="My facebook profile"
+                class="icon" onclick="location.href='https://github.com/dashboard'"/>
+            </div>
+         </div>
+        
+       
+    </section>
+    <section id="about">
+        <h1 class="title">Despre mine</h1>
+        <div class="section-container">
+                <div class="section-pic-container">
+                    <img  class="about-picture"src="./assets/aboutPicture.jpg">
+                </div>
+                <div class="about-details-containter">
+                    <div class="about-container">
+                        <img class="icon"src="./assets/education.png" alt="">
+                        <h3>Studii</h3>
+                        <p>Facultatea de Inginerie Electrică și Știința Calculatoarelor<br>Calculatoare <br> Anul IV</p>    
+                    </div>
+                
+                    <p class="section_text_p2">Salut, numele meu este Domnița Andrei Claudiu și mă bucur că îmi urmărești site-ul.
+                        Sunt student la Facultatea de Inginerie Electrică și Știința Calculatoarelor.
+                    <br>Sunt atras de <strong>desen</strong>, <strong>design</strong> și mai nou de <strong>front-end</strong>. 
+                    <br><br> Poate găsești și tu inspirație în următorul citat <br> <em>"The magic you're looking for is in the work that you're avoiding"</em>  </p>
+                 </div>
+
+        </div>
+       <img class="icon arrow" onclick="location.href='./#hobbies'"    src="./assets/arrows.png">
+    </section>
+    <section id="hobbies">
+        <h1 class="title">Pasiuni</h1>
+        <div class="hobbies-container">
+            <div class="hobbie">
+               <img class="hobbie-img"src="assets/drawing.png" alt="">
+               
+               <p class="hobbie-descr">Desen</p>
+            </div>
+            <div class="hobbie">
+                <img class="hobbie-img"src="assets/football.jpg" alt="">
+                
+               <p class="hobbie-descr">Fotbal</p>
+             </div>
+             <div class="hobbie">
+                <img class="hobbie-img"src="assets/hobbie3.jpg" alt="">
+
+                <p class="hobbie-descr">Programare</p>
+             </div>
+        </div>
+        <img class="icon arrow" onclick="location.href='./#projects'"    src="./assets/arrows.png">
+
+    </section>
+    <section id="projects">
+        
+        <p class="section_text_p1">Descoperă cele mai recente</p>
+        <h1 class="title">PROIECTE</h1>
+        <div class="project-details-container">
+            <div class="project-container">
+                <div class="photo-container">
+                    <img src="./assets/Work.jpg " class="project-img">
+                </div>
+                <h2 class="subtitle-project">Work in progress</h2>
+                <div class="project-btn-containers">
+                    <button class="btn  project-btn disabled-button" onclick="location.href='github.com'" disabled >GitHub</button>
+                </div> 
+            </div>
+            <div class="project-container">
+                <div class="photo-container">
+                    <img src="./assets/figma.png" class="project-img">
+                </div>
+                <h2 class="subtitle-project">CSU Website Design</h2>
+                <div class="project-btn-containers">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://www.figma.com/file/VFxY1QEWAtK5r5UyoY1gmD/Pagini-secundare?type=design&node-id=78%3A60&mode=design&t=FDx1zZei96YVH0Eo-1'">Figma</button>
+                </div> 
+            </div>
+            <div class="project-container">
+                <div class="photo-container">
+                    <img src="./assets/usv.png" class="project-img">
+                </div>
+                <h2 class="subtitle-project">USV Activities Database</h2>
+                <div class="project-btn-containers">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/Claudiu987/USV-Database-project.git'">GitHub</button>
+                </div> 
+            </div>
+        </div>
+        <br><br>
+    
+        
+            
+    </section>
+    <section id="contact">
+        <h1 class="title">Contactează-mă</h1>
+        <div class="contact-info-upper">
+            <div class="contact-info-container">
+                    <img
+                    src="./assets/email.png"
+                    class="icon email-icon">
+            
+            <p>andrei.domnita@student.usv.ro</p>
+             </div>  
+            <div class="contact-info-container">
+            <img
+                    src="./assets/email.png"
+                    class="icon email-icon">
+            
+            <p></p>aclaudiu987@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                    src="./assets/facebook.png"
+                    
+                    class="icon" onclick="location.href='https://www.facebook.com/AndreiAndrei7v?locale=ro_RO'">
+
+            
+            <p><a href="https://www.facebook.com/AndreiAndrei7v?locale=ro_RO">Claudiu Andrei Domnița</a></p>
+        </div>
+        </div>
+       
+    
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Despre</a></li>
+                    <li><a href="#hobbies">Pasiuni</a></li>
+                    <li><a href="#projects">Proiecte</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Domnița Andrei. Toate drepturile rezervate</p>
+    </footer>
+    <script src="script.js"></script>    
+</body>
+</html>
